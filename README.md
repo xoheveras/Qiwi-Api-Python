@@ -31,6 +31,6 @@ def generatePay(summ)
 
 def checkPay(comment)
 
-def payment_history_last(my_login, api_access_token, rows_num, next_TxnId, next_TxnDate)
+def payment_history_last(phone, token_qiwi, rows_num, next_TxnId, next_TxnDate)
 
 ```
