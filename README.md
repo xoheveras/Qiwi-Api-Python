@@ -19,18 +19,40 @@ phone = ""
 
 ```
 
-Функции
+<h1>Функции</h1>
 
+
+Получить данные о балансе
 ```python
 
-def balans()
+def balans() -> str
 
-def pay(summ=0,phonepay=phone)
+```
 
-def generatePay(summ)
+Перевести средства
+```python
 
-def checkPay(comment)
+def pay(summ=0,phonepay=phone) -> none
 
-def payment_history_last(phone, token_qiwi, rows_num, next_TxnId, next_TxnDate)
+```
+
+Сгенерировать страницу оплаты с определенной суммой и комментарием
+```python
+
+def generatePay(summ) -> str,str
+
+```
+
+Используя комментарий отследить оплату
+```python
+
+def checkPay(comment) -> bool
+
+```
+
+Получить список последних платежей кошелька (Используется при проверке оплаты)
+```python
+
+def payment_history_last(phone, token_qiwi, rows_num, next_TxnId, next_TxnDate) -> json
 
 ```
